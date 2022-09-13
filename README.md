@@ -38,8 +38,9 @@ The next step of the project involves employing a classifier that takes the nume
 ## Conclusion
 Finally, results of the experiment is as follows:
 
+
 | Algorithm | Classifier 1 | Classifier 2 | Classifier 3 | Classifier 4 | Classifier 5 | Classifier 6 |
-|      :---:      |     :---:      |     :---:      ||      :---:      |     :---:      |     :---:      ||     :---:      |
+|      :---:      |     :---:      |     :---:      |      :---:      |     :---:      |     :---:      |     :---:      |
 | Word2Vec| 0.7914  | 0.8891  | **0.8937** |  0.8829  |  0.8850 | 0.9075  |
 | BOW     | 0.8885  | 0.8926  | 0.8900  | 0.8825  | 0.8962  | 0.9076  |
 | Fusion  | **0.8891**  | **0.8931** |  0.8909  | **0.8889** |  **0.8965**  | **0.9096**|
