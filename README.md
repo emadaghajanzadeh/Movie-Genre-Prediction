@@ -33,20 +33,17 @@ Similar to Word2Vec, this method is another way of obtaining numerical represent
 Considering the TF-IDF method, it does not take into account the meaning of words, while Word2Vec could do. Therefore, in this part of the project, these two methods are put together. The goal is to make TF-IDF aware of synonym words, and so, count synonyms together, e.g. not count two words like "good" and "well" separately. To do so, the concept of **bag of word** should be replaced by **bag of concept**. Therefore, before the TF-IDF starts counting, word clustering is performed by Word2Vec, and words in the same clusters are replaced by a representative word of that cluster (can be its mean). For example, all words like "good", "well", and "fine" are replaced by "nice" word ( which is actually very nice :) ) and counted 3 times by TF-IDF.
 
 ### Classifiers
-The next step of the project involves employing a classifier that takes the numerical vector representations of documents and reports its genres. In order to do that, several classifers are employed such as, Binary Relevance, Classifier Chains, Label Powerset, Adapted Algorithm, SVM, and Multi-Layer Perceptron.
+The next step of the project involves employing a classifier that takes the numerical vector representations of documents and reports their genres. In order to do that, several classifiers are employed such as Binary Relevance, Classifier Chains, Label Powerset, Adapted Algorithm, SVM, and Multi-Layer Perceptron.
 
-## Conclusion
-Finally, results of the experiment is as follows:
+## Experimental Results and Conclusion
+Finally, the results of the experiment are as follows:
 
-
-| Algorithm | Classifier 1 | Classifier 2 | Classifier 3 | Classifier 4 | Classifier 5 | Classifier 6 |
+| Algorithm | Binary Relevance | Classifier Chains | Label Powerset | Adapted Algorithm | SVM | Multi-Layer Perceptron |
 |      :---:      |     :---:      |     :---:      |      :---:      |     :---:      |     :---:      |     :---:      |
 | Word2Vec| 0.7914  | 0.8891  | **0.8937** |  0.8829  |  0.8850 | 0.9075  |
 | BOW     | 0.8885  | 0.8926  | 0.8900  | 0.8825  | 0.8962  | 0.9076  |
 | Fusion  | **0.8891**  | **0.8931** |  0.8909  | **0.8889** |  **0.8965**  | **0.9096**|
 
-
-
-
+As it can be seen, except Label Powerset classifier, the combination of word2vec and TF-IDF outperformed the two other methods. 
 
 
